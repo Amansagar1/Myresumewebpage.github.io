@@ -33,8 +33,8 @@ const TopImginfo = () => {
 
   return (
     <div className="w-full flex justify-center bg-gradient-to-r from-blue-950 to-blue-300 py-8 sm:py-12 lg:py-16">
-      <div className="w-[90%] sm:w-[80%] lg:w-[70%] xl:w-[80%] h-[600px] flex flex-col-reverse lg:flex-row items-center justify-center gap-6">
-        <div className="text-center">
+      <div className="w-[90%] sm:w-[80%] lg:w-[70%] xl:w-[80%] h-[400px] flex flex-col-reverse lg:flex-row items-center justify-between gap-6">
+        <div className="text-center "> 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-8xl font-bold text-white animate-fade-in">
             {displayedText}
           </h1>
@@ -48,15 +48,17 @@ const TopImginfo = () => {
             Download Resume
           </button>
         </div>
-        <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-[740px] lg:h-[700px] rounded-full overflow-hidden shadow-2xl animate-bounce-slow flex items-center justify-center">
+      <div className=" w-1/3 flex items-center justify-center">
+      <div className="relative w-48 h-48  lg:w-[500px] lg:h-[530px]  overflow-hidden  animate-bounce-slow items-left">
           <Image
             src={myimg}
             alt="Kumar Aman Sagar"
             fill
             loading="lazy"
-            className="rounded-full shadow-4xl transform transition-transform duration-500 hover:scale-105"
+            className=" transform transition-transform duration-500 hover:scale-105"
           />
         </div>
+      </div>
       </div>
     </div>
   );

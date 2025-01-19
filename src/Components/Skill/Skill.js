@@ -58,7 +58,7 @@ const Skill = () => {
     Object.values(skillsSections).flatMap((skills) => skills);
 
   return (
-    <div className="w-full flex items-center justify-center bg-gradient-to-r from-[#10162f] to-[#4c65be] p-4 h-[500px]">
+    <div className="w-full flex items-center justify-center bg-gradient-to-r from-[#10162f] to-[#4c65be] p-4 h-[600px]">
       <section className="bg-gradient-to-r from-[#10162f] to-[#4c65be] text-white p-4 w-[90%] h-full overflow-scroll">
         <div className="container mx-auto px-8">
           <h2 className="text-2xl font-bold mb-6">
